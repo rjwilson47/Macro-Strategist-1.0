@@ -1,0 +1,106 @@
+% Wilson's Multi-Asset Research — Report Skeleton
+% Copy this file, replace placeholders, compile with: bash scripts/build_report.sh reports/{file}.tex
+
+\documentclass{wilson-report}
+
+% ── PDF Metadata (update per report) ──
+\hypersetup{
+  pdftitle={REPORT TITLE HERE},
+  pdfsubject={CLASSIFICATION HERE},
+  pdfkeywords={ASSET CLASSES HERE, HORIZON HERE}
+}
+
+\begin{document}
+
+% ── TITLE PAGE ──
+\maketitlepage
+  {REPORT TITLE HERE}
+  {CLASSIFICATION HERE}
+  {ASSET CLASSES HERE}
+  {HORIZON HERE}
+
+% ── EXECUTIVE SUMMARY ──
+\execsummary{
+\begin{itemize}[leftmargin=1.2em, itemsep=4pt]
+  \item \textbf{The View:} Direction + asset + conviction + horizon
+  \item \textbf{The Evidence:} Single most compelling data point
+  \item \textbf{The Risk:} What would make this call wrong
+  \item \textbf{The Expression:} How to implement — instruments + hedge
+\end{itemize}
+}
+
+% ── BODY ──
+\section{Macro Context}
+Content here...
+
+\section{Core Analysis}
+\subsection{Valuation Assessment}
+Content here...
+
+% Example chart:
+% \begin{figure}[H]
+%   \centering
+%   \includegraphics[width=0.95\textwidth]{chart_name.pdf}
+%   \caption{Caption. Source: [source], as of [date].}
+% \end{figure}
+
+\subsection{Cycle Positioning}
+Content here...
+
+\subsection{Sentiment \& Positioning}
+Content here...
+
+% For thematic equity reports:
+% \subsection{Key Names to Watch}
+% \subsection{Earnings Themes}
+
+\section{Scenario Analysis}
+
+\begin{tabularx}{\textwidth}{>{\bfseries\raggedright\arraybackslash}m{1.3cm} >{\centering\arraybackslash}m{1cm} X >{\raggedright\arraybackslash}m{2cm} >{\raggedright\arraybackslash}m{3cm}}
+\toprule
+\rowcolor{BrandNavy} \color{white}\textbf{Scenario} & \color{white}\textbf{Prob.} & \color{white}\textbf{Description} & \color{white}\textbf{Target} & \color{white}\textbf{Key Driver} \\
+\midrule
+\bullrow Bull & 25\% & Description & Target & Driver \\
+\baserow Base & 55\% & Description & Target & Driver \\
+\bearrow Bear & 20\% & Description & Target & Driver \\
+\bottomrule
+\end{tabularx}
+
+\section{Cross-Asset Implications}
+Content here...
+
+\section{Risks to the View}
+Content here...
+
+\section{Key Indicators to Watch}
+
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}m{2.2cm} >{\raggedright\arraybackslash}m{1.8cm} X X >{\raggedright\arraybackslash}m{2.2cm}}
+\toprule
+\rowcolor{BrandNavy} \color{white}\textbf{Indicator} & \color{white}\textbf{Current} & \color{white}\textbf{Confirming} & \color{white}\textbf{Disconfirming} & \color{white}\textbf{Next Trigger} \\
+\midrule
+Indicator 1 & Value & What confirms & What invalidates & Date \\
+\midrule
+Indicator 2 & Value & What confirms & What invalidates & Date \\
+\bottomrule
+\end{tabularx}
+
+\section{Actionable Conclusions}
+Content here...
+
+% \section*{Appendix: AI-Generated Hypotheses}
+% \aihypothesis{Hypothesis text here...}
+
+\section*{Open Questions}
+\small
+\begin{itemize}[leftmargin=1.2em, itemsep=4pt]
+  \item Question 1
+  \item Question 2
+\end{itemize}
+
+\section*{Sources}
+\small
+List of all data sources with dates and URLs...
+
+\signoff
+
+\end{document}
