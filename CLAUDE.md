@@ -210,40 +210,80 @@ Based on the trigger, classify the report into one or more of the following cate
 
 **Page targets are total pages including charts.** As a ceiling guideline: deep dives should not exceed ~4,500 words of body text plus 2–4 charts; tactical pieces should not exceed ~2,000 words plus 1–2 charts. There is no minimum — if you've covered all activated modules with sourced data and a clear thesis, the report is done. A tight 800-word tactical idea with one killer chart is better than a padded 2,000-word one.
 
-### Step 2: Gather Data
-Use web search aggressively to source:
-- Current prices, yields, spreads, and valuations
-- Recent macro data releases and surprises
-- Central bank communications and policy expectations
-- Earnings data, revisions, and guidance (where relevant)
-- Fund flows and positioning data (CFTC, EPFR, etc. where available)
-- Relevant sell-side research summaries or consensus estimates
-- News catalysts and upcoming event calendars
+### Step 2: Gather Data — Parallel Sub-Task Search
 
-**Search broadly before writing.** Conduct multiple searches across different aspects of the topic. It is better to search 10–15 times and have comprehensive data than to search twice and fill gaps with assumptions.
+**Structure data gathering as parallel search lanes.** Before searching, decompose the topic into independent sub-topics and search them concurrently using parallel tool calls. This is faster and ensures comprehensive coverage without sequential bottlenecks.
 
-**Actively search for disconfirming evidence.** After forming an initial thesis direction, conduct at least 2–3 searches specifically seeking the bear case, counterarguments, or data that contradicts your emerging view. **Steelman the opposing view** — before dismissing a counter-argument, state it in its strongest form, as its most sophisticated proponent would argue it. Include this steelmanned counter-argument in the "Risks to the View" section. If the disconfirming evidence is strong enough to shift your view, let it — intellectual honesty is more valuable than narrative consistency.
+#### 2a. Decompose into Search Lanes
+Based on the activated modules, define **3–6 independent search lanes**. Each lane has its own search targets. Example decomposition for a US macro report:
+
+| Lane | Search Targets |
+|---|---|
+| **Growth & Activity** | GDP, ISM/PMI, industrial production, business investment, leading indicators |
+| **Inflation & Prices** | CPI, PCE, PPI, wage growth, inflation expectations, commodity input costs |
+| **Labour Market** | NFP, unemployment, claims, JOLTS, participation rate, wage trends |
+| **Monetary Policy & Rates** | Fed decisions, dot plot, OIS-implied path, FOMC minutes, term premium, yield curve |
+| **Housing & Consumer** | Housing starts, existing home sales, mortgage rates, retail sales, consumer confidence, credit card delinquencies, personal income/spending |
+| **Fiscal & Trade** | Budget deficit, trade balance, tariff developments, import/export volumes, government spending trajectory |
+
+For thematic reports, lanes might be: **Theme fundamentals**, **Beneficiary valuations**, **Earnings/guidance**, **Policy/regulatory**, **Positioning/flows**, **Bear case/risks**.
+
+For company reports: **Financials & filings**, **Industry/competitive landscape**, **Valuation comps**, **Thematic exposure**, **Bear case**.
+
+#### 2b. Execute Search Lanes in Parallel
+**Launch all search lanes simultaneously** using parallel tool calls. Each lane should conduct 2–5 searches depending on the budget. Do not wait for one lane to complete before starting another — independence is the whole point.
+
+#### 2c. Collate and Identify Gaps
+After all lanes return, review for:
+- **Missing critical data** — escalate per Rule 7
+- **Conflicting sources** — resolve per Rule 1
+- **Lanes that returned thin results** — conduct 1–2 targeted follow-up searches
 
 **Tiered search budget by report type:**
 
-| Report Type | Search Budget | Rationale |
-|---|---|---|
-| Theme Radar | 5–8 searches | Lightweight scan, breadth over depth |
-| Tactical Trade Idea | 8–12 searches | Focused, single-asset |
-| Single Asset / Thematic Deep Dive | 12–20 searches | Comprehensive, multi-angle |
-| Company Deep Dive | 12–20 searches | Financial data, competitive landscape, valuation |
-| Cross-Asset / Full Macro Review | 15–25 searches | Broadest coverage needed |
-| Secular Outlook | 15–25 searches | Structural data, demographic trends, policy trajectories |
+| Report Type | Search Budget | Lanes | Rationale |
+|---|---|---|---|
+| Theme Radar | 5–8 searches | 3 | Lightweight scan, breadth over depth |
+| Tactical Trade Idea | 8–12 searches | 3–4 | Focused, single-asset |
+| Single Asset / Thematic Deep Dive | 12–20 searches | 4–5 | Comprehensive, multi-angle |
+| Company Deep Dive | 12–20 searches | 4–5 | Financial data, competitive landscape, valuation |
+| Cross-Asset / Full Macro Review | 15–25 searches | 5–6 | Broadest coverage needed |
+| Secular Outlook | 15–25 searches | 5–6 | Structural data, demographic trends, policy trajectories |
 
 Use the Theme Radar as the cheap screening layer — run it first at low cost, then invest the full search/chart/compile budget only on the theme the user selects.
 
-### Step 3: Execute the Relevant Modules
+### Step 3: Form Initial Thesis
+After data gathering, draft a **one-sentence thesis direction** before writing. This is not the final view — it is a working hypothesis to be tested. State it explicitly (e.g., "Working thesis: US economy is in late-cycle deceleration with stagflationary risk skewed to the upside"). This anchors the next two steps.
+
+### Step 4: Disconfirming Evidence Search (mandatory, named step)
+**This is a separate, trackable step — not folded into general data gathering.** After forming the initial thesis in Step 3:
+
+1. **Conduct 2–3 dedicated searches** specifically seeking the strongest counter-argument to your working thesis. Use phrasing that an intelligent bear (or bull, if your thesis is bearish) would use. Example: if your thesis is "late-cycle deceleration," search for "US economy reacceleration evidence 2026", "bull case US growth", "why recession fears overblown."
+2. **Steelman the opposing view.** Write out the counter-thesis in its strongest form — as its most sophisticated proponent would argue it. Do not strawman.
+3. **Assess whether the disconfirming evidence shifts your thesis.** Three outcomes:
+   - **Thesis holds** — the counter-evidence is acknowledged but outweighed. Include the steelmanned counter-argument in "Risks to the View."
+   - **Thesis adjusts** — the counter-evidence moderates the view (e.g., conviction drops from High to Medium, or probability weights shift). Note what changed and why.
+   - **Thesis reverses** — the counter-evidence is strong enough to flip the call. This is intellectually honest and valuable. Let it happen.
+4. **Log the disconfirming searches.** In the Sources section, include the bear-case searches so the reader can see both sides were investigated.
+
+**In the todo list, this step must appear as a named task** (e.g., "Disconfirming evidence search — test thesis against bear case") and must be marked complete before proceeding to Step 5. Do not skip it.
+
+### Step 5: Review Against Data (mandatory, named step)
+**Before writing the report, conduct a structured review of all gathered data against the thesis.** This prevents single-pass authoring errors where the thesis was formed early and the later data never got a chance to challenge it.
+
+1. **Data inventory check.** List all activated modules and confirm that each has sourced data. Flag any module that is data-thin.
+2. **Cross-reference signals.** Do the three pillars (Value, Cycle, Sentiment) align? If they conflict, note the tension explicitly — this often produces the most valuable insight in the report.
+3. **Check for gaps against the mandatory sub-topics** (Module A housing/trade/consumer for macro reports, default chart set for all reports). If a mandatory sub-topic is missing, conduct follow-up searches now — not after the report is drafted.
+4. **Confirm the thesis still holds** in light of all data, including the disconfirming evidence from Step 4. Adjust conviction level, probability weights, or direction if needed.
+
+This step should take 2–3 minutes of deliberate review. It is cheap insurance against a report that doesn't fully account for its own data.
+
+### Step 6: Execute the Relevant Modules and Generate Charts
 Run the appropriate analytical modules (detailed below). Not every module applies to every report — use judgment.
 
-### Step 4: Generate Charts
-Where data supports it, generate charts using Python (matplotlib) and include them in the LaTeX document as embedded images. See the **Charts & Visualisations** section below for guidelines.
+Where data supports it, generate charts using Python (matplotlib) and include them in the LaTeX document as embedded images. See the **Charts & Visualisations** section below for guidelines. Check the **default chart set** for the report type and include all mandatory charts where data is available.
 
-### Step 5: Synthesise and Produce the Briefing
+### Step 7: Synthesise and Produce the Briefing
 Compile findings into the structured output format (see Output Template below). Produce the final output as a **LaTeX document compiled to PDF** using `\documentclass{wilson-report}`. Build with `bash scripts/build_report.sh reports/{file}.tex`.
 
 ---
@@ -261,6 +301,61 @@ Charts significantly enhance research briefings. **Include charts wherever quant
 - **Scenario payoff**: Visual representation of bull/base/bear return distribution
 - **Correlation**: Rolling correlation between asset classes
 - **Earnings**: Revision trends, EPS growth trajectories, margin trends
+
+### Default chart set by report type:
+Certain report types have **mandatory default charts** that should always be included if data is available. These are the charts that readers expect — omitting them requires a note explaining why.
+
+| Report Type | Default Charts (mandatory if data available) |
+|---|---|
+| **Macro / Economic** | GDP growth trend, Inflation trajectory (CPI/PCE), Fed rate path (actual vs dots vs market), Macro dashboard (multi-indicator status) |
+| **Any report touching rates or monetary policy** | **Yield curve snapshot** (current vs 3 months ago vs 1 year ago, showing 2Y/5Y/10Y/30Y). This is non-negotiable for any report where the Fed, duration, or the term structure is a material factor. |
+| **Equity deep dive** | Valuation time series (fwd P/E or CAPE), Earnings revision breadth, Relative performance vs benchmark |
+| **Credit** | Spread history (IG and/or HY OAS), Default rate trajectory |
+| **Thematic** | Theme beneficiary performance vs broad market, Valuation comparison table (can be a chart or table) |
+| **Cross-asset** | Asset class return comparison (bar chart), Correlation matrix or rolling correlation |
+
+If you cannot produce a default chart because the data is insufficient, note it explicitly: *"A yield curve chart would be standard here, but only [X] tenor data points were sourced."*
+
+### Chart data file convention:
+Before generating charts, **write all sourced data points to a JSON data file** at `reports/chart_data/{report-date}-{topic}.json`. This serves three purposes:
+1. **Reproducibility** — charts can be regenerated without re-running web searches.
+2. **Auditability** — every data point in a chart is traceable to its source.
+3. **Iteration** — when updating a report, only the data file needs to change; the chart script reads from it.
+
+The data file structure:
+```json
+{
+  "report": "2026-02-23-us-macro-outlook-economic",
+  "generated": "2026-02-23",
+  "charts": {
+    "chart_gdp_growth": {
+      "description": "US Real GDP Growth, quarterly annualised",
+      "source": "BEA via CNBC, 20 Feb 2026",
+      "data": {
+        "labels": ["Q1 2024", "Q2 2024", "Q3 2024", "Q4 2024", "Q1 2025", "Q2 2025"],
+        "values": [1.6, 3.0, 3.1, 2.4, 2.2, 1.4]
+      }
+    },
+    "chart_yield_curve": {
+      "description": "US Treasury Yield Curve",
+      "source": "US Treasury, 21 Feb 2026",
+      "data": {
+        "tenors": ["2Y", "5Y", "10Y", "30Y"],
+        "current": [4.12, 4.05, 4.08, 4.35],
+        "3m_ago": [3.95, 3.88, 4.02, 4.28],
+        "1y_ago": [4.65, 4.35, 4.25, 4.45]
+      }
+    }
+  }
+}
+```
+
+**Chart generation scripts must read from this data file**, not embed data inline. The script (`reports/generate_charts.py` or per-report script) should:
+1. Load the JSON data file
+2. Generate all charts from the loaded data
+3. Save as PDF vectors in the reports directory
+
+This means a report can be refreshed by: (1) updating the JSON with new data, (2) re-running the chart script, (3) recompiling the LaTeX. No chart code changes needed.
 
 ### Chart generation process:
 1. Use **Python with matplotlib** to generate charts.
@@ -329,6 +424,11 @@ Use standard institutional benchmarks appropriate to the topic. **Document which
 - What are the key macro risks on the horizon? (Geopolitical, political, financial stability, trade policy.)
 - Growth differentials across regions — where is growth accelerating vs decelerating?
 - Credit conditions — are financial conditions tightening or easing, and what does this mean for the real economy?
+
+**Mandatory sub-topics for US macro reports** (search for these even if not the primary focus — they are too interconnected to omit):
+- **Housing & shelter**: Housing starts, existing/new home sales, mortgage rates (30Y fixed), home price indices (Case-Shiller/FHFA), shelter CPI contribution. Housing is a leading indicator of the cycle and the largest single driver of core inflation via the shelter component. Always address the lag between market rents and CPI shelter.
+- **Trade & external balance**: Goods trade deficit, import/export volumes, bilateral trade flows (especially China), tariff/trade policy developments, and their pass-through to domestic prices and supply chains. Critical whenever tariffs or trade policy feature in the macro narrative.
+- **Consumer health**: Retail sales, personal income and spending (real), consumer credit growth, credit card delinquency rates, savings rate, consumer confidence (Conference Board and U. Michigan). For any report identifying a "two-speed economy" or consumer stress, granular consumer data is mandatory — not just sentiment surveys.
 
 **Frameworks to consider:**
 - Investment clock (growth × inflation quadrants)
