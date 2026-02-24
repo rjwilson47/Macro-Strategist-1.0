@@ -1,0 +1,78 @@
+{
+  "report": "2026-02-23-australia-macro-outlook-economic",
+  "generated": "2026-02-23",
+  "charts": {
+    "chart_gdp_growth": {
+      "description": "Australia Real GDP Growth, quarterly (q/q, seasonally adjusted)",
+      "source": "ABS National Accounts, various quarters",
+      "data": {
+        "labels": ["Q4 2024", "Q1 2025", "Q2 2025", "Q3 2025"],
+        "values": [0.6, 0.2, 0.6, 0.4],
+        "yoy_labels": ["Q4 2024", "Q1 2025", "Q2 2025", "Q3 2025"],
+        "yoy_values": [1.3, 1.0, 1.8, 2.1]
+      }
+    },
+    "chart_inflation": {
+      "description": "Australia CPI Inflation: Headline vs Trimmed Mean (year-ended, quarterly basis)",
+      "source": "ABS CPI, RBA SMP February 2026",
+      "data": {
+        "labels": ["Mar Q 2025", "Jun Q 2025", "Sep Q 2025", "Dec Q 2025"],
+        "headline": [2.4, 2.1, 3.2, 3.6],
+        "trimmed_mean": [2.9, 2.7, 3.0, 3.4],
+        "target_upper": [3.0, 3.0, 3.0, 3.0],
+        "target_lower": [2.0, 2.0, 2.0, 2.0],
+        "forecast_labels": ["Jun Q 2026", "Dec Q 2026", "Jun Q 2027", "Dec Q 2027", "Jun Q 2028"],
+        "forecast_headline": [4.2, 3.6, 2.9, 2.7, 2.6],
+        "forecast_trimmed": [3.7, 3.2, 2.8, 2.7, 2.6]
+      }
+    },
+    "chart_rba_rate": {
+      "description": "RBA Cash Rate: Actual and Market-Implied Path",
+      "source": "RBA, Trading Economics, RBA SMP February 2026",
+      "data": {
+        "labels": ["Feb 2025", "May 2025", "Aug 2025", "Nov 2025", "Feb 2026", "May 2026 (mkt)", "2027 (mkt peak)"],
+        "values": [4.10, 3.85, 3.60, 3.60, 3.85, 4.10, 4.30],
+        "actual_count": 5,
+        "forecast_start": 5
+      }
+    },
+    "chart_yield_curve": {
+      "description": "Australian Government Bond Yield Curve",
+      "source": "Trading Economics, CEIC, 20 Feb 2026",
+      "data": {
+        "tenors": ["2Y", "3Y", "5Y", "10Y", "15Y"],
+        "current": [4.22, 4.30, 4.38, 4.75, 4.96],
+        "3m_ago": [3.73, 4.09, 4.15, 4.80, 4.95],
+        "1y_ago": [3.86, 3.94, 4.02, 4.53, 4.70]
+      }
+    },
+    "chart_dashboard": {
+      "description": "Australian Macro Dashboard — Key Indicators at a Glance",
+      "source": "Various (ABS, RBA, Trading Economics), as of 21 Feb 2026",
+      "data": {
+        "indicators": [
+          "GDP Growth (y/y)",
+          "Trimmed Mean CPI (y/y)",
+          "Unemployment Rate",
+          "RBA Cash Rate",
+          "House Prices (y/y)",
+          "Consumer Sentiment",
+          "AUD/USD",
+          "Terms of Trade Index"
+        ],
+        "values": ["2.1%", "3.4%", "4.1%", "3.85%", "+10.2%", "90.5", "0.709", "116.5"],
+        "direction": ["up", "up", "stable", "up", "up", "down", "up", "up"],
+        "signal": ["neutral", "negative", "positive", "negative", "mixed", "negative", "positive", "positive"]
+      }
+    },
+    "chart_consumer_sentiment": {
+      "description": "Westpac-Melbourne Institute Consumer Sentiment Index",
+      "source": "Westpac IQ, various months",
+      "data": {
+        "labels": ["Aug 2025", "Sep 2025", "Oct 2025", "Nov 2025", "Dec 2025", "Jan 2026", "Feb 2026"],
+        "values": [105.0, 101.5, 98.5, 97.2, 88.5, 92.9, 90.5],
+        "neutral_line": 100
+      }
+    }
+  }
+}
